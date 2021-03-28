@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: true
+      
+app:
+  datasource:
+    card:
+      url: jdbc:mysql://localhost:3306/carddb?createDatabaseIfNotExist=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    cardholder:
+      url: jdbc:mysql://localhost:3306/cardholderdb?createDatabaseIfNotExist=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    member:
+      url: jdbc:mysql://localhost:3306/memberdb?createDatabaseIfNotExist=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
